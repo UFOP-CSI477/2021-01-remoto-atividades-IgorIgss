@@ -7,19 +7,22 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+ Será desenvolvido um sistema que possibilite o cadastro e remoção de informações/critérios para diversas vagas de estágios, assim sendo necessário o candidato acessar e localizar alguma vaga que o interesse.
+
 
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de ...
+  O trabalho final tem como tema o desenvolvimento de um sistema de gerenciamento de estágios
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
 
-  Este projeto terá as seguintes funcionalidades...
-
-<!-- Apresentar restrições de funcionalidades e de escopo. -->
+  Este projeto terá as seguintes funcionalidades:
+  Cadastro de vaga de estágio;
+  Remoção de vaga de estágio;
+  Alteração da vaga de estágio.
+  
 ### 3. Restrições
 
   Neste trabalho não serão considerados ...
