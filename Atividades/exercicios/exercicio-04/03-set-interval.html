@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atividade 03-interval</title>   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     
+
+    <script>
+        'use strict'
+
+        function Classe(nome, idade, endereco){
+            this.nome = nome;
+            this.idade = idade;
+            this.endereco = endereco;
+        }
+
+        function dataAtual(){
+            document.getElementById("data").innerHTML = `Data e hora atual =  ${Date()}`;
+
+        }
+
+
+        function carregarDadosDoForm() {
+            const nome = document.frmDados.nome.value;
+            const sobrenome = document.frmDados.sobrenome.value;
+            const endereco = document.frmDados.endereco.value;
+
+            const classe = new Classe(nome, sobrenome, endereco);
+            console.log(classe);
+
+            document.getElementById("nome").innerHTML = `Nome =  ${classe.nome}`;
+            document.getElementById("idade").innerHTML = `Idade =  ${classe.idade}`;
+            document.getElementById("endereco").innerHTML = `Endereço =  ${classe.endereco}`;
+
+            window.alert(`Dados carregados com sucesso: ${nome} ${sobrenome}`);
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Atividade 03-setInterval</h1>
+    </header>
+
+    <script>
+        setInterval(dataAtual);
+    </script>
+
+    <div id="dados">
+        <div id="data"></div>
+        <div id="nome"></div>
+        <div id="idade"></div>
+        <div id="endereco"></div>
+    </div>
+
+    <form action="post" name="frmDados">
+
+        <div class="form-group"> 
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Nome da pessoa">
+        </div>
+        
+        <div>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" placeholder="Sobrenome da pessoa">
+        </div>
+
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" placeholder="Endereço da pessoa">
+        </div>
+        
+
+    </form>
+
+    <input type="button" value="Carregar" class="btn btn-primary" onclick="carregarDadosDoForm()">
+    
+</body>
+</html>

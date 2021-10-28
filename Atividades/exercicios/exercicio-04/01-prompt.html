@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-prompt</title>
+
+    <title>Introdução ao HTML</title>
+
+    <script>
+        'use strict'
+
+        function Classe(nome, idade, endereco){
+            this.nome = nome;
+            this.idade = idade;
+            this.endereco = endereco;
+        }
+
+        function carregarDados(){
+            const nome = window.prompt('Insira seu nome:')
+            let idade = window.prompt('Insira sua idade:')
+            const endereco = window.prompt('Insira seu endereço:')
+
+            const classe = new Classe(nome, idade, endereco);
+
+            document.getElementById("nome").innerHTML = classe.nome;
+            document.getElementById("idade").innerHTML = classe.idade;
+            document.getElementById("endereço").innerHTML = classe.endereco;
+
+        }
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Atividade 01-prompt</h1>
+    </header>
+
+    <script>
+        document.write(classe.nome);
+        document.write(classe.idade);
+        document.write(classe.endereco);
+    </script>
+
+    <div id="dados">
+        <div id="nome"></div>
+        <div id="idade"></div>
+        <div id="endereço"></div>
+    </div>
+
+    <input type="button" value="Carregar" onclick="carregarDados()">
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atividade 04-validacao</title>   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     
+    <script src="validacao-form.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Atividade 04-validacao</h1>
+    </header>
+
+    <form name="frmDados">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" value="" placeholder="Nome da pessoa">    
+
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade" id = "idade" value="" placeholder="Idade da pessoa">
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" value="" placeholder="Endereço da pessoa">
+        
+        <input type="button" value="Carregar" class="btn btn-primary" onclick = "carregarDadosDoForm()">
+        
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>atividade 05</title>   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     
+    
+</head>
+<body onload="carregarEstados()">
+    
+    <form>
+
+        <select name="estados" id="estados" onChange="carregarCidades()">
+            <option value="">Selecione o estado:</option>
+        </select>
+
+        <select name="cidades" id="cidades" onChange="carregarSubdistritos()">
+            <option value="">Selecione a cidade:</option>
+        </select>
+
+        
+        <select name="subdistritos" id="subdistritos">
+            <option value="">Selecione o subdistrito:</option>
+        </select>
+
+    </form>
+
+    <script src="api.js"></script>
+
+</body>
+</html>
