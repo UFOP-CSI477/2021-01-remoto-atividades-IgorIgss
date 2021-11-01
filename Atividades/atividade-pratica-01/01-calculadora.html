@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Calculadora</title>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+            body{
+                margin-top: 50px;
+                background: rgba(138, 121, 121, 0.452);
+                font-family: sans-serif;
+            }
+    
+            .body{
+                margin-top: 15px;
+                width: 100%;
+                height: auto;
+                padding: 9px;
+                background: #dedede;
+                border-radius: 10px;
+            }
+
+            .top{
+                position: relative;
+                width: 100%;
+                background: rgb(133, 57, 57);
+                border-radius: 10px;
+                height: 70px;
+                padding: 12px;
+                
+            }
+
+            .container{
+                position: relative;
+                margin: 100 auto;
+                height: auto;
+                padding: 10px;
+                width: 315px;
+                background: rgb(124, 9, 9);
+                border: 3px solid rgb(124, 9, 9);
+                box-shadow: 4px 4px 4px rgb(83, 81, 81);
+                border-radius: 10px;
+            }
+
+            .campo{
+                opacity: 0.5;
+                color: #800011;
+                width: 93%;
+                height: 100%;
+                border: none;
+                font-size:20px;
+                text-align: right;
+            }
+
+            .btn{
+                margin: 7px;
+                background: rgb(172, 71, 71);
+                color: white;
+                border: none;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                margin-left: 7px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                border-radius: 30px;
+            }
+
+            .igual{
+                width: 119px;
+            }
+
+            #opr{
+                position: absolute;
+                z-index: 999;
+                margin: 15px 30px;
+                font-weight: bold;
+                color: #800011;
+            }
+            
+            input{
+                color:rgb(192, 15, 15);
+                background-color: #dedede;
+                padding: 10px; 
+                border: 2px solid;
+                margin: 2px;
+                margin-left: 10px;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+        </style>
+
+    <script type="text/javascript" src="calculadora.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <header class="top">
+
+            <form class="form" method="">
+                <label id="opr"></label>
+                <input type="text" id="result" value="" class="campo" disabled>
+            </form>
+        </header>
+
+        <section class="body">
+            <input type="button" value="7" name="botao" class="btn">
+            <input type="button" value="8" name="botao" class="btn">
+            <input type="button" value="9" name="botao" class="btn">
+            <input type="button" value="+" name="adicao" class="btn">
+            <input type="button" value="4" name="botao" class="btn">
+            <input type="button" value="5" name="botao" class="btn">
+            <input type="button" value="6" name="botao" class="btn">
+            <input type="button" value="-" name="subtracao" class="btn">
+            <input type="button" value="1" name="botao" class="btn">
+            <input type="button" value="2" name="botao" class="btn">
+            <input type="button" value="3" name="botao" class="btn">
+            <input type="button" value="*" name="multiplicacao" class="btn">
+            <input type="button" value="." name="botao" class="btn">
+            <input type="button" value="0" name="botao" class="btn">
+            <input type="button" value="CE" name="ce" class="btn">
+            <input type="button" value="/" name="divisao" class="btn">
+            <input type="button" value="=" name="igual" class="btn igual">
+        </section>
+    </div>
+    
+</body>
+</html>
