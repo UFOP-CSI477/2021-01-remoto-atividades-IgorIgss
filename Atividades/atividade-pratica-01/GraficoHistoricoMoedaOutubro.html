@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+    body {
+      font-family: Roboto, sans-serif;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #chart {
+      max-width: 1200px;
+      margin: 35px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Grafico do preço do dolar em Outubro de 2021</h3>
+  <div id="chart">
+  </div>
+</body>
+<script>
+
+  var options = {
+    chart: {
+      type: 'bar'
+    },
+    series: [{
+      name: 'real',
+      data: [5.36, 5.36, 5.37, 5.45, 5.48, 5.49, 5.52, 5.51, 5.51, 5.51, 5.54, 5.53, 5.51, 5.51, 5.46, 5.46, 5.46, 5.51, 5.58, 5.60, 5.66, 5.65, 5.65, 5.65, 5.56, 5.57, 5.54, 5.65, 5.64, 5.64, 5.64]
+    }],
+    xaxis: {
+      categories: [01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+    }
+  }
+
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+  chart.render();
+</script>
+
+</html>

@@ -8,27 +8,80 @@ var valortotalenvio = 0;
 var valortotalrecebimento = 0;
 var saldofinal = 0;
 
+function limparSelect(campo){
+    while(campo.length > 1){
+        campo.remove(1);
+    }
+}
+function getBank() {
+
+    fetch('https://brasilapi.com.br/api/banks/v1')
+    .then(response => response.json())
+    .then(data => preencherSelectBank(data))
+    .then(data => preencherSelectBank2(data))
+    .catch(error => console.error(error))
 
 
 
-function adicionaroperacao(){
+}
+
+
+//getBank()
+
+function preencherSelectBank(data){
+
+    let bancos = document.getElementById("select-bank");
+
+
+    for (let index in data){
+
+        const {name} = data[index];
+
+        let option = document.createElement("option");
+        option.innerHTML = `${name}`;
+
+        bancos.appendChild(option);
+
+    }
+}
+
+function preencherSelectBank2(data){
+
+    let bancos = document.getElementById("select-bank2");
+
+
+    for (let index in data){
+
+        const {name} = data[index];
+
+        let option = document.createElement("option");
+        option.innerHTML = `${name}`;
+
+        bancos.appendChild(option);
+
+    }
+
+}
+
+
+function adicionaroperacao() {
 
     tipodachave = document.frmDados.tipochave;
     valordachave = document.frmDados.chavepix;
     tipodeoperacao = document.frmDados.operacao;
     valor = document.frmDados.valor;
 
-    if (tipodeoperacao.value == 'recebimento'){
+    if (tipodeoperacao.value == 'recebimento') {
         valortemp = parseInt(valor.value);
         valortotalrecebimento = valortotalrecebimento + valortemp;
-    } else if (tipodeoperacao.value == 'envio'){
+    } else if (tipodeoperacao.value == 'envio') {
         valortemp = parseInt(valor.value);
         valortotalenvio = valortotalenvio + valortemp;
     } else {
         console.log('Não preenchido');
     }
 
-    saldofinal =  parseInt(valortotalrecebimento) - parseInt(valortotalenvio);
+    saldofinal = parseInt(valortotalrecebimento) - parseInt(valortotalenvio);
 
     console.log(saldofinal);
 }
