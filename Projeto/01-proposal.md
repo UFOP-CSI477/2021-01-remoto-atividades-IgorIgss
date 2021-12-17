@@ -1,5 +1,5 @@
 # **CSI606-2021-01 - Remoto - Proposta de Trabalho Final**
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Aluna(o): Igor Gabriel Souza Silva
 
 --------------
 
