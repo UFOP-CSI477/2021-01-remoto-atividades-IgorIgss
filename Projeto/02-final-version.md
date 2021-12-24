@@ -1,5 +1,5 @@
 # **CSI606-2021-01 - Remoto - Trabalho Final - Resultados**
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Aluna(o): Igor Gabriel Souza Silva
 
 --------------
 
@@ -7,22 +7,41 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+  Foi desenvolvido um sistema de divulgação de vagas de estágio, tendo a funcionalidade de cadastro de vagas por parte da empresa, para que os usuários consigam visualizar as vagas disponíveis e entrar em contato com os responsáveis.
 
 ### 1. Funcionalidades implementadas
-<!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
+ - Cadastro de vagas de estágio;
+ - Listagem de vagas de estágio cadastradas;
+ - Disponibilizar meio de contato com as empresas.
   
 ### 2. Funcionalidades previstas e não implementadas
-<!-- Descrever as funcionalidades que eram previstas e não foram implementas, apresentando uma breve justificativa do porquê elas não foram incluídas -->
-
 ### 3. Outras funcionalidades implementadas
-<!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
-
 ### 4. Principais desafios e dificuldades
-<!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
+ O que levou mais tempo para desenvolver, foi o back-end, em especificamente a parte do banco de dados (conexão/operações)
 
 ### 5. Instruções para instalação e execução
-<!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
+1º realizar o download do back-end e front-end disponibilizados no GitHub;
+2º executar a sequência de comandos abaixo para o programa rodar:
+
+========== VSC - Front End ==========
+CMD:
+# cd C:\Users\igorg\Desktop\Vagas
+# code .
+
+VS CODE:
+#npm install #instalar dependências
+#npm start #iniciar o front
+=====================================
+========== VSC - Back End ===========
+CMD:
+# cd C:\Users\igorg\Desktop\Server (Caminho da pasta)
+# code .
+
+VS CODE:
+#npm install (instalar dependências)
+#npm run Knex:migrate
+#npm start
+=====================================
 
 ### 6. Referências
 <!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
