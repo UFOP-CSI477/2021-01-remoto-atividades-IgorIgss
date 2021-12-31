@@ -1,0 +1,28 @@
+
+
+
+
+
+
+========== VSC - Front End ==========
+CMD:
+# cd C:\Users\igorg\Desktop\Vagas
+# code .
+
+
+VS CODE:
+#npm install #instalar dependências
+#npm start #iniciar o front
+=====================================
+========== VSC - Back End ===========
+CMD:
+# cd C:\Users\igorg\Desktop\Server (Caminho da pasta)
+# code .
+
+VS CODE:
+#npm install (instalar dependências)
+#npm run Knex:migrate
+#npm start
+=====================================
+
+descrição do projeto e a implementação. 
